@@ -22,6 +22,8 @@ int main()
 
     Vector2 prevMouse = GetMousePosition();
 
+
+
     while (!WindowShouldClose())
     {
         Vector2 mouse = GetMousePosition();
@@ -70,6 +72,10 @@ int main()
         {
             brush.changeColor();
         }
+
+        if(IsKeyPressed(KEY_S)){
+            canvas.saveScreenshot();
+        }
         // ── Rendering ──
         BeginDrawing();
         {
@@ -103,6 +109,10 @@ int main()
                 }
             }
         }
+        // Draw brush cursor preview at all times
+
+        DrawCircle(mouseWorld.x, mouseWorld.y, brush.size, brush.color);
+
         EndDrawing();
     }
 
