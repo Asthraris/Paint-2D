@@ -41,5 +41,11 @@ class Canvas{
         Vector2 position = { 0.0f, 0.0f };
         DrawTextureRec(page.texture, source, position, WHITE);
     }
+    void reset(){
+        BeginTextureMode(page);
+        ClearBackground(BLACK);
+        EndTextureMode();
+
+    }
     
 };

@@ -4,6 +4,9 @@
 #define MAX_SIZE 20.0f
 #define MIN_SIZE 0.5f
 
+
+Color COLORS[6]={RED,BLUE,YELLOW,GREEN,WHITE,BLACK};
+
 class Brush{
 
     public:
@@ -24,6 +27,11 @@ class Brush{
             return;
         }
 
+    }
+    void changeColor(){
+        static int count ;
+        count = (count+1)%6;
+        color = COLORS[count];
     }
 
 
