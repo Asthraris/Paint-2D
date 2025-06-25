@@ -1,49 +1,91 @@
-# 🎨 Lightweight Cross-Platform Painting App
+# 🎨 PikaDraw – Minimalist Cross-Platform Drawing App
 
-A minimal and blazing-fast painting application designed with simplicity at its core. Built for **quick sketches**, **idea jotting**, or just casual doodling — this app launches instantly and runs anywhere.
+PikaDraw is a **lightweight**, **cross-platform** 2D drawing application built using [raylib](https://www.raylib.com/). It emphasizes simplicity, speed, and smooth brush-based drawing — making it ideal for quick sketching, digital whiteboarding, or low-latency creative work.
 
 ---
 
 ## ✨ Features
 
-- 🪶 **Lightweight** — near-zero startup time, ultra-low memory usage running at 60 FPS.
-- 🖱️ **Simple UI** — no clutter, just canvas and tools
-- 💻 **Cross-platform** — works seamlessly on **Windows**, **Linux**, and **macOS**
-- 📁 Save/load your art with a single click
-- 🖌️ Basic toolset: brush, eraser, color picker, clear canvas
-- 🖼️ Adjustable brush size and color palette
-- ⚡ Runs on systems with even minimal hardware specs
+- 🖌️ **Smooth Freehand Drawing** with continuous brush stroke interpolation  
+- 🎨 **Color Picker**: Hold `C` to select from predefined color swatches  
+- 🔁 **Canvas Reset**: Press `R` to instantly clear the canvas  
+- 🔍 **Zoom & Pan**:
+  - Hold `Ctrl` + scroll to zoom
+  - Middle mouse drag to pan  
+- 🧠 **Context Help**: Hold `Space` to show built-in control guide  
+- 📸 **Screenshot Export**: Press `S` to save canvas as PNG with timestamp  
+- ⚙️ **Brush Preview Cursor**: Always-visible pointer reflecting brush size & color  
+- 💡 **Lightweight & Fast**: Minimal dependencies, instant load, and low resource usage  
 
 ---
 
-## 🔧 Why This App?
+## ⌨️ Controls
 
-Most drawing apps are bloated or overkill for quick work. This app is:
-
-> 🚀 **Lightweight like MS Paint**,  
-> 🎯 **Focused like a whiteboard**,  
-> 🛠️ **Built with cross-platform toolkits**,  
-> 📦 **Minimal dependencies**.
-
-Ideal for:
-- Quick UI mockups
-- Teaching kids to draw
-- Embedded systems or low-resource environments
-- Offline sketching
-
----
-
-## 🖥️ Screenshots
-
-<!-- Replace with your own images -->
-
-![screenshot2](.draw-demo.png)
+| Key / Action              | Function                         |
+|---------------------------|----------------------------------|
+| `Left Click`              | Draw with brush                  |
+| `C` (hold)                | Show color picker                |
+| `Click color`             | Select brush color               |
+| `R`                      | Reset/clear canvas               |
+| `Shift`                  | Adjust brush size                |
+| `Ctrl + Scroll`          | Zoom in/out                      |
+| `Middle Mouse Drag`      | Pan camera                       |
+| `S`                      | Save canvas screenshot (PNG)     |
+| `Space` (hold)           | Show help menu                   |
+| `ESC`                    | Exit application                 |
 
 ---
 
-## 📦 Getting Started
+## 🖼️ Screenshot Example
 
-### Installation
-Download EXE file According to ur setup provided by me . which is just compiled version of the same code Avail here. and Release Tag! 
+![Screenshot Placeholder](.screenshot.png)  
+> Output files saved as `canvas_YYYY-MM-DD_HH-MM-SS.png`
+
+---
+
+## 📦 Building From Source
+
+### Requirements:
+- C++ compiler (GCC / Clang / MSVC)
+- [raylib](https://github.com/raysan5/raylib) installed (v4.5+ recommended)
+
+### Example (GCC / Linux):
+
+```bash
+g++ main.cpp Canvas.cpp Brush.cpp -o PikaDraw -lraylib -lGL -lm -ldl -lpthread -lrt -lX11
+./PikaDraw
+````
+
+---
+
+## 🔭 Roadmap
+
+* 🖌️ More advanced brushes (texture, spray, gradient)
+* 🖼️ Canvas resize and rescale support
+* 💾 Manual save/load projects
+* 🌈 HSV or palette-based color selector
+* 🧠 Brush history / undo-redo
+* 🪟 Export with transparent background (PNG alpha)
+
+---
+
+## ⚙️ Tech Stack
+
+* Language: **C++**
+* Framework: **[raylib](https://www.raylib.com/)** — a minimalist C library for graphics and input
+* Built with: simplicity, speed, and full offline support in mind
+
+---
+
+## 📃 License
+
+MIT License – use freely for personal, academic, or commercial projects.
+
+---
+
+## 🙌 Author
+
+**AMAN GUPTA**
+Inspired by simplicity. Powered by code.
 
 
