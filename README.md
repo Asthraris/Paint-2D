@@ -1,6 +1,7 @@
 # 🎨 PikaDraw – Minimalist Cross-Platform Drawing App
 
 PikaDraw is a **lightweight**, **cross-platform** 2D drawing application built using [raylib](https://www.raylib.com/). It emphasizes simplicity, speed, and smooth brush-based drawing — making it ideal for quick sketching, digital whiteboarding, or low-latency creative work.
+![Screenshot Placeholder](screenshot.png)  
 
 ---
 
@@ -36,10 +37,13 @@ PikaDraw is a **lightweight**, **cross-platform** 2D drawing application built u
 
 ---
 
-## 🖼️ Screenshot Example
+## 🖼️ Screenshot Feature
 
-![Screenshot Placeholder](.screenshot.png)  
 > Output files saved as `canvas_YYYY-MM-DD_HH-MM-SS.png`
+
+---
+
+Download Exe for windows Provided under release section , u can use by downloading it from there without Compiling yourself.!
 
 ---
 
